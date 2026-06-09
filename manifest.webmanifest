@@ -1,0 +1,19 @@
+{
+  "name": "Cozy Nights & Serenity Stay",
+  "short_name": "Cozy & Serenity",
+  "description": "Δύο studio στον Ξινό Μεσσήνης. Άνετη διαμονή με self check-in και όμορφη αισθητική.",
+  "lang": "el",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF6F0",
+  "theme_color": "#FAF6F0",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

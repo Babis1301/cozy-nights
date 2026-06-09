@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Πολιτική Απορρήτου — Cozy Nights &amp; Serenity Stay</title>
+  <meta name="description" content="Πολιτική Απορρήτου & Cookies των καταλυμάτων Cozy Nights & Serenity Stay στον Ξινό Μεσσήνης, σύμφωνα με τον GDPR." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#FAF6F0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Cozy Nights & Serenity Stay" />
+  <link rel="apple-touch-icon" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { cream:"#FAF6F0", sand:"#EFE6DA", clay:"#C17A54", terracotta:"#B5623C", olive:"#6B6B4E", charcoal:"#2B2623", muted:"#8A7E72" },
+        fontFamily: { display:['"Montserrat"',"sans-serif"], body:['"Manrope"',"sans-serif"] }
+      }}
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-charcoal bg-cream has-solid-nav">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 py-4">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-3">
+      <a href="index.html" class="font-display text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide text-charcoal leading-tight">Cozy Nights <span class="text-clay">&amp;</span> Serenity Stay</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-terracotta transition" data-en="Home">Αρχική</a>
+        <a href="cozy-nights.html" class="hover:text-terracotta transition" data-en="Cozy Nights">Cozy Nights</a>
+        <a href="serenity-stay.html" class="hover:text-terracotta transition" data-en="Serenity Stay">Serenity Stay</a>
+        <a href="contact.html" class="hover:text-terracotta transition" data-en="Contact">Επικοινωνία</a>
+        <button data-lang-toggle class="border border-clay text-clay rounded-full px-3 py-1 text-xs font-semibold hover:bg-clay hover:text-white transition" aria-label="Αλλαγή γλώσσας"><span data-lang-label>EN</span></button>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-charcoal flex-shrink-0" aria-label="Μενού" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" class="w-7 h-7"></i></button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden bg-cream/95 backdrop-blur border-t border-sand mt-4">
+      <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="index.html" class="hover:text-terracotta" data-en="Home">Αρχική</a>
+        <a href="cozy-nights.html" class="hover:text-terracotta" data-en="Cozy Nights">Cozy Nights</a>
+        <a href="serenity-stay.html" class="hover:text-terracotta" data-en="Serenity Stay">Serenity Stay</a>
+        <a href="contact.html" class="hover:text-terracotta" data-en="Contact">Επικοινωνία</a>
+        <button data-lang-toggle class="self-start border border-clay text-clay rounded-full px-3 py-1 text-xs font-semibold" aria-label="Αλλαγή γλώσσας"><span data-lang-label>EN</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-24 px-6">
+    <article class="max-w-3xl mx-auto policy">
+
+      <header class="mb-10 reveal">
+        <p class="uppercase tracking-[0.25em] text-xs text-clay mb-4" data-en="Legal">Νομικά</p>
+        <h1 class="font-display text-4xl sm:text-5xl font-semibold mb-3" data-en="Privacy &amp; Cookie Policy">Πολιτική Απορρήτου &amp; Cookies</h1>
+        <p class="text-sm text-muted" data-en="Last updated: 8 June 2026">Τελευταία ενημέρωση: 8 Ιουνίου 2026</p>
+        <div class="divider-line w-24 mt-6"></div>
+      </header>
+
+      <div class="space-y-10 text-muted leading-relaxed reveal">
+
+        <p data-en="This Privacy Policy explains how Cozy Nights &amp; Serenity Stay (&quot;we&quot;) collects and processes your personal data when you visit this website or use our contact form, in accordance with the EU General Data Protection Regulation (GDPR 2016/679) and Greek Law 4624/2019.">
+          Η παρούσα Πολιτική Απορρήτου εξηγεί πώς τα καταλύματα Cozy Nights &amp; Serenity Stay («εμείς») συλλέγουν και επεξεργάζονται τα προσωπικά σας δεδομένα όταν επισκέπτεστε αυτόν τον ιστότοπο ή χρησιμοποιείτε τη φόρμα επικοινωνίας, σύμφωνα με τον Γενικό Κανονισμό Προστασίας Δεδομένων της ΕΕ (GDPR 2016/679) και τον Ν. 4624/2019.
+        </p>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="1. Data Controller">1. Υπεύθυνος Επεξεργασίας</h2>
+          <p data-en="The controller responsible for your data is:">Υπεύθυνος επεξεργασίας των δεδομένων σας είναι:</p>
+          <ul class="mt-3 space-y-1">
+            <li><strong>Cozy Nights &amp; Serenity Stay</strong></li>
+            <li><span data-en="Tasou Alevizou, Xinos Messini 24200, Greece">Τάσου Αλεβίζου, Ξινός Μεσσήνη 24200, Ελλάδα</span></li>
+            <li>Email: <a href="mailto:vicky.tsakanika@gmail.com" class="text-terracotta underline">vicky.tsakanika@gmail.com</a></li>
+            <li><span data-en="Phone">Τηλέφωνο</span>: <a href="tel:+306945407693" class="text-terracotta underline">+30 694 540 7693</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="2. What data we collect">2. Ποια δεδομένα συλλέγουμε</h2>
+          <ul class="list-disc pl-5 space-y-2">
+            <li data-en="<strong>Contact form data:</strong> name, email, phone (optional), dates of stay, accommodation of interest and the content of your message.">
+              <strong>Δεδομένα φόρμας επικοινωνίας:</strong> όνομα, email, τηλέφωνο (προαιρετικό), ημερομηνίες διαμονής, κατάλυμα ενδιαφέροντος και το περιεχόμενο του μηνύματός σας.
+            </li>
+            <li data-en="<strong>Booking data:</strong> if you book through Booking.com, your booking is processed by Booking.com under its own privacy policy — not by this website.">
+              <strong>Δεδομένα κράτησης:</strong> αν κάνετε κράτηση μέσω Booking.com, η κράτησή σας επεξεργάζεται από την Booking.com βάσει της δικής της πολιτικής απορρήτου — όχι από αυτόν τον ιστότοπο.
+            </li>
+            <li data-en="<strong>Technical data:</strong> our hosting provider may record technical information (e.g. IP address, date/time, browser type) in server logs for security and proper operation.">
+              <strong>Τεχνικά δεδομένα:</strong> ο πάροχος φιλοξενίας ενδέχεται να καταγράφει τεχνικές πληροφορίες (π.χ. διεύθυνση IP, ημερομηνία/ώρα, τύπος προγράμματος περιήγησης) σε αρχεία καταγραφής (logs) για λόγους ασφάλειας και ορθής λειτουργίας.
+            </li>
+            <li data-en="<strong>Local storage / cookies:</strong> see section 4 below.">
+              <strong>Τοπική αποθήκευση / cookies:</strong> δείτε την ενότητα 4 παρακάτω.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="3. Purposes &amp; legal basis">3. Σκοποί &amp; νομική βάση</h2>
+          <ul class="list-disc pl-5 space-y-2">
+            <li data-en="To reply to your enquiry and take steps prior to a possible booking — legal basis: your consent and/or pre-contractual measures (Art. 6(1)(a) and (b) GDPR).">
+              Για να απαντήσουμε στο αίτημά σας και να λάβουμε μέτρα πριν από πιθανή κράτηση — νομική βάση: η συγκατάθεσή σας ή/και προσυμβατικά μέτρα (Άρθρο 6(1)(α) και (β) GDPR).
+            </li>
+            <li data-en="To keep the website secure and working properly — legal basis: our legitimate interest (Art. 6(1)(f) GDPR).">
+              Για την ασφάλεια και την ορθή λειτουργία του ιστότοπου — νομική βάση: το έννομο συμφέρον μας (Άρθρο 6(1)(στ) GDPR).
+            </li>
+            <li data-en="To display the map (Google Maps) — legal basis: your consent (Art. 6(1)(a) GDPR).">
+              Για την προβολή του χάρτη (Google Maps) — νομική βάση: η συγκατάθεσή σας (Άρθρο 6(1)(α) GDPR).
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="4. Cookies &amp; similar technologies">4. Cookies &amp; παρόμοιες τεχνολογίες</h2>
+          <p data-en="We do not use advertising or analytics/tracking cookies. We use only the following:">
+            Δεν χρησιμοποιούμε cookies διαφήμισης ή ανάλυσης/παρακολούθησης. Χρησιμοποιούμε μόνο τα εξής:
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mt-3">
+            <li data-en="<strong>Essential local storage (no consent required):</strong> &quot;site-lang&quot; stores your language choice (EL/EN) and &quot;cookie-consent&quot; remembers your cookie decision. These stay on your device and are not shared.">
+              <strong>Απαραίτητη τοπική αποθήκευση (δεν απαιτεί συγκατάθεση):</strong> το «site-lang» αποθηκεύει την επιλογή γλώσσας (EL/EN) και το «cookie-consent» θυμάται την επιλογή σας για τα cookies. Παραμένουν στη συσκευή σας και δεν κοινοποιούνται.
+            </li>
+            <li data-en="<strong>Map (requires consent):</strong> when you accept, we load Google Maps to show our location. Google may then set its own (third-party) cookies. Until you consent, the map is not loaded and no request is sent to Google.">
+              <strong>Χάρτης (απαιτεί συγκατάθεση):</strong> όταν αποδεχθείτε, φορτώνουμε το Google Maps για να δείξουμε την τοποθεσία μας. Η Google ενδέχεται τότε να ορίσει δικά της cookies (τρίτου μέρους). Μέχρι να συναινέσετε, ο χάρτης δεν φορτώνεται και δεν αποστέλλεται κανένα αίτημα στην Google.
+            </li>
+            <li data-en="<strong>Content delivery networks (CDN):</strong> fonts (Google Fonts), styles (Tailwind) and icons (Lucide) load from external networks; your browser connects to them and the relevant provider may log your IP address.">
+              <strong>Δίκτυα διανομής περιεχομένου (CDN):</strong> οι γραμματοσειρές (Google Fonts), τα στυλ (Tailwind) και τα εικονίδια (Lucide) φορτώνονται από εξωτερικά δίκτυα· ο browser σας συνδέεται με αυτά και ο εκάστοτε πάροχος ενδέχεται να καταγράψει τη διεύθυνση IP σας.
+            </li>
+          </ul>
+          <p class="mt-3" data-en="You can change or withdraw your consent at any time via the &quot;Cookie settings&quot; link at the bottom of every page.">
+            Μπορείτε να αλλάξετε ή να ανακαλέσετε τη συγκατάθεσή σας ανά πάσα στιγμή μέσω του συνδέσμου «Ρυθμίσεις cookies» στο κάτω μέρος κάθε σελίδας.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="5. Recipients &amp; third parties">5. Αποδέκτες &amp; τρίτα μέρη</h2>
+          <p data-en="We do not sell your data. It may be processed by:">Δεν πουλάμε τα δεδομένα σας. Ενδέχεται να επεξεργάζονται από:</p>
+          <ul class="list-disc pl-5 space-y-2 mt-3">
+            <li data-en="Our hosting provider (storage and email delivery of the contact form).">Τον πάροχο φιλοξενίας μας (αποθήκευση και αποστολή email της φόρμας).</li>
+            <li data-en="Google (Google Maps, Google Fonts).">Την Google (Google Maps, Google Fonts).</li>
+            <li data-en="Booking.com, if you choose to book through it.">Την Booking.com, εφόσον επιλέξετε να κάνετε κράτηση μέσω αυτής.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="6. International transfers">6. Διεθνείς διαβιβάσεις</h2>
+          <p data-en="Some providers (e.g. Google) may process data outside the European Economic Area. Such transfers rely on appropriate safeguards, such as the European Commission's Standard Contractual Clauses (SCCs).">
+            Ορισμένοι πάροχοι (π.χ. Google) ενδέχεται να επεξεργάζονται δεδομένα εκτός του Ευρωπαϊκού Οικονομικού Χώρου. Τέτοιες διαβιβάσεις βασίζονται σε κατάλληλες εγγυήσεις, όπως οι Τυποποιημένες Συμβατικές Ρήτρες (SCCs) της Ευρωπαϊκής Επιτροπής.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="7. Retention period">7. Χρόνος διατήρησης</h2>
+          <ul class="list-disc pl-5 space-y-2">
+            <li data-en="Contact form messages: kept for as long as needed to handle your enquiry and up to 24 months thereafter, unless a booking or a legal obligation requires longer.">
+              Μηνύματα φόρμας επικοινωνίας: διατηρούνται όσο χρειάζεται για τη διαχείριση του αιτήματός σας και έως 24 μήνες μετά, εκτός αν μια κράτηση ή νομική υποχρέωση απαιτεί μεγαλύτερο διάστημα.
+            </li>
+            <li data-en="Server logs: kept according to the hosting provider's policy.">
+              Αρχεία καταγραφής διακομιστή (logs): διατηρούνται σύμφωνα με την πολιτική του παρόχου φιλοξενίας.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="8. Your rights">8. Τα δικαιώματά σας</h2>
+          <p data-en="Under the GDPR you have the right to access, rectify, erase, restrict or object to the processing of your data, the right to data portability, and the right to withdraw consent at any time. To exercise any of these, email us at vicky.tsakanika@gmail.com. We respond within one month.">
+            Σύμφωνα με τον GDPR έχετε δικαίωμα πρόσβασης, διόρθωσης, διαγραφής, περιορισμού ή εναντίωσης στην επεξεργασία των δεδομένων σας, δικαίωμα φορητότητας των δεδομένων, καθώς και δικαίωμα ανάκλησης της συγκατάθεσής σας ανά πάσα στιγμή. Για να ασκήσετε οποιοδήποτε από αυτά, στείλτε μας email στο vicky.tsakanika@gmail.com. Απαντάμε εντός ενός μηνός.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="9. Security">9. Ασφάλεια</h2>
+          <p data-en="We apply reasonable technical and organisational measures to protect your data. However, no transmission over the internet can be guaranteed 100% secure.">
+            Εφαρμόζουμε εύλογα τεχνικά και οργανωτικά μέτρα για την προστασία των δεδομένων σας. Ωστόσο, καμία μετάδοση μέσω διαδικτύου δεν μπορεί να είναι 100% ασφαλής.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="10. Children">10. Ανήλικοι</h2>
+          <p data-en="This website is not intended for children under 16. We do not knowingly collect their data.">
+            Ο ιστότοπος δεν απευθύνεται σε παιδιά κάτω των 16 ετών. Δεν συλλέγουμε εν γνώσει μας δεδομένα τους.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="11. Right to complain">11. Δικαίωμα καταγγελίας</h2>
+          <p data-en="If you believe your rights have been infringed, you may lodge a complaint with the Hellenic Data Protection Authority (HDPA): 1-3 Kifisias Ave., 11523 Athens, www.dpa.gr.">
+            Αν θεωρείτε ότι παραβιάζονται τα δικαιώματά σας, μπορείτε να υποβάλετε καταγγελία στην Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (ΑΠΔΠΧ): Λεωφ. Κηφισίας 1-3, 11523 Αθήνα, www.dpa.gr.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="12. Changes to this policy">12. Αλλαγές στην παρούσα πολιτική</h2>
+          <p data-en="We may update this policy from time to time. The current version, with its date, is always available on this page.">
+            Ενδέχεται να επικαιροποιούμε την παρούσα πολιτική κατά καιρούς. Η ισχύουσα έκδοση, με την ημερομηνία της, είναι πάντα διαθέσιμη σε αυτή τη σελίδα.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-2xl font-semibold text-charcoal mb-3" data-en="13. Contact">13. Επικοινωνία</h2>
+          <p data-en="For any question about this policy or your data, contact us at vicky.tsakanika@gmail.com or +30 694 540 7693.">
+            Για οποιαδήποτε ερώτηση σχετικά με την παρούσα πολιτική ή τα δεδομένα σας, επικοινωνήστε στο vicky.tsakanika@gmail.com ή στο +30 694 540 7693.
+          </p>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-cream border-t border-sand pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Cozy Nights &amp; Serenity Stay</h3>
+        <p class="text-muted text-sm leading-relaxed max-w-xs" data-en="Two stylish studios for an authentic and relaxing stay in Messini.">Δύο κομψά studio για μια αυθεντική και ξεκούραστη διαμονή στη Μεσσήνη.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-en="Contact">Επικοινωνία</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-clay"></i> <a href="tel:+306945407693" class="hover:text-terracotta">+30 694 540 7693</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-clay"></i> <a href="mailto:vicky.tsakanika@gmail.com" class="hover:text-terracotta">vicky.tsakanika@gmail.com</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-clay"></i> <span data-en="Tasou Alevizou, Xinos Messini 24200">Τάσου Αλεβίζου, Ξινός Μεσσήνη 24200</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-en="Follow us">Ακολουθήστε μας</h4>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/serenity.cozy" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/p/Cozy-Nights-Serenity-Stay-61557912811403/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="mailto:vicky.tsakanika@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal max-w-6xl mx-auto mt-12 pt-6 border-t border-sand text-center text-xs text-muted">
+      © <span id="year">2026</span> Cozy Nights &amp; Serenity Stay. <span data-en="All rights reserved.">Με επιφύλαξη παντός δικαιώματος.</span>
+      <span class="block mt-2">
+        <a href="privacy.html" class="hover:text-terracotta underline" data-en="Privacy Policy">Πολιτική Απορρήτου</a>
+        <span class="mx-1">·</span>
+        <button type="button" data-cookie-settings class="hover:text-terracotta underline" data-en="Cookie settings">Ρυθμίσεις cookies</button>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

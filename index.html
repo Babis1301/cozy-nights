@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Cozy Nights &amp; Serenity Stay — Ενοικιαζόμενα Studio στον Ξινό Μεσσήνης</title>
+  <meta name="description" content="Δύο κομψά, πρόσφατα ανακαινισμένα studio στον Ξινό Μεσσήνης, κοντά στη θάλασσα και την Καλαμάτα. Cozy Nights & Serenity Stay — άνετη διαμονή με self check-in 24/7." />
+  <meta name="keywords" content="ενοικιαζόμενα Μεσσήνη, studio Ξινός, διαμονή Καλαμάτα, Cozy Nights, Serenity Stay, καταλύματα Μεσσηνία, booking Μεσσήνη" />
+  <meta name="author" content="Cozy Nights & Serenity Stay" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cozy Nights & Serenity Stay — Ενοικιαζόμενα Studio στον Ξινό Μεσσήνης" />
+  <meta property="og:description" content="Δύο κομψά studio για αξέχαστες διακοπές στη Μεσσηνία." />
+  <meta property="og:image" content="images/sensity/699775676.jpg" />
+  <meta property="og:locale" content="el_GR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#FAF6F0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Cozy Nights & Serenity Stay" />
+  <link rel="apple-touch-icon" href="images/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#FAF6F0", sand: "#EFE6DA", clay: "#C17A54",
+            terracotta: "#B5623C", olive: "#6B6B4E", charcoal: "#2B2623", muted: "#8A7E72"
+          },
+          fontFamily: {
+            display: ['"Montserrat"', "sans-serif"],
+            body: ['"Manrope"', "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-charcoal bg-cream">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 py-4">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-3">
+      <a href="index.html" class="font-display text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide text-charcoal leading-tight">
+        Cozy Nights <span class="text-clay">&amp;</span> <span style="text-wrap: nowrap;">Serenity Stay</span>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-terracotta transition" data-en="Home">Αρχική</a>
+        <a href="cozy-nights.html" class="hover:text-terracotta transition" data-en="Cozy Nights">Cozy Nights</a>
+        <a href="serenity-stay.html" class="hover:text-terracotta transition" data-en="Serenity Stay">Serenity Stay</a>
+        <a href="contact.html" class="hover:text-terracotta transition" data-en="Contact">Επικοινωνία</a>
+        <button data-lang-toggle class="border border-clay text-clay rounded-full px-3 py-1 text-xs font-semibold hover:bg-clay hover:text-white transition" aria-label="Αλλαγή γλώσσας">
+          <span data-lang-label>EN</span>
+        </button>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button id="menu-toggle" class="md:hidden text-charcoal flex-shrink-0" aria-label="Μενού" aria-controls="mobile-menu" aria-expanded="false">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-cream/95 backdrop-blur border-t border-sand mt-4">
+      <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="index.html" class="hover:text-terracotta" data-en="Home">Αρχική</a>
+        <a href="cozy-nights.html" class="hover:text-terracotta" data-en="Cozy Nights">Cozy Nights</a>
+        <a href="serenity-stay.html" class="hover:text-terracotta" data-en="Serenity Stay">Serenity Stay</a>
+        <a href="contact.html" class="hover:text-terracotta" data-en="Contact">Επικοινωνία</a>
+        <button data-lang-toggle class="self-start border border-clay text-clay rounded-full px-3 py-1 text-xs font-semibold" aria-label="Αλλαγή γλώσσας">
+          <span data-lang-label>EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative h-screen min-h-[620px] flex items-center justify-center text-center">
+    <img src="images/sensity/699775676.jpg" alt="Φωτεινός ενιαίος χώρος καταλύματος με θέα" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative z-10 px-6 max-w-3xl text-cream">
+      <p class="uppercase tracking-[0.3em] text-sm mb-5 text-cream/80" data-en="Welcome to Messini">Καλώς ήρθατε στη Μεσσήνη</p>
+      <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-semibold leading-tight mb-6">
+        Cozy Nights &amp; Serenity Stay
+      </h1>
+      <p class="text-lg sm:text-xl text-cream/90 mb-9 font-light" data-en="Two stylish studios in Xinos, Messini — moments from the sea and Kalamata. Your home away from home.">
+        Δύο κομψά studio στον Ξινό Μεσσήνης, λίγα λεπτά από τη θάλασσα και την Καλαμάτα. Το σπίτι σας μακριά από το σπίτι.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#katalymata" class="btn-primary" data-en="Explore our stays">Δείτε τα καταλύματα</a>
+        <a href="contact.html" class="btn-outline !border-cream !text-cream hover:!bg-cream hover:!text-charcoal" data-en="Contact us">Επικοινωνία</a>
+      </div>
+    </div>
+
+    <a href="#intro" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-cream/80 animate-bounce" aria-label="Κύλιση προς τα κάτω">
+      <i data-lucide="chevron-down" class="w-8 h-8"></i>
+    </a>
+  </section>
+
+  <!-- ===================== INTRO ===================== -->
+  <section id="intro" class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <p class="uppercase tracking-[0.25em] text-xs text-clay mb-4" data-en="About us">Σχετικά με εμάς</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-semibold mb-6" data-en="Where comfort meets calm">
+        Εκεί που η άνεση συναντά τη γαλήνη
+      </h2>
+      <div class="divider-line w-24 mx-auto mb-8"></div>
+      <p class="text-lg text-muted leading-relaxed" data-en="Cozy Nights and Serenity Stay are two recently renovated studios in the same quiet building in Xinos, Messini. Thoughtfully furnished and spotlessly clean, they combine modern comfort with a warm, personal welcome — the perfect base to explore Messinia, its beaches and Kalamata.">
+        Τα Cozy Nights και Serenity Stay είναι δύο πρόσφατα ανακαινισμένα studio στο ίδιο ήσυχο κτίριο στον Ξινό Μεσσήνης. Προσεγμένα επιπλωμένα και άψογα καθαρά, συνδυάζουν τη σύγχρονη άνεση με μια ζεστή, προσωπική φιλοξενία — η ιδανική βάση για να εξερευνήσετε τη Μεσσηνία, τις παραλίες της και την Καλαμάτα.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== ΚΑΤΑΛΥΜΑΤΑ (CARDS) ===================== -->
+  <section id="katalymata" class="py-20 px-6 bg-sand/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="uppercase tracking-[0.25em] text-xs text-clay mb-4" data-en="Our accommodations">Τα καταλύματά μας</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-semibold" data-en="Choose your studio">Επιλέξτε το studio σας</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card 1 — Cozy Nights -->
+        <article class="lodging-card bg-white rounded-2xl overflow-hidden shadow-sm reveal">
+          <a href="cozy-nights.html" class="block overflow-hidden">
+            <img src="images/cozy/605182424.jpg" alt="Cozy Nights — ενιαίος χώρος με καθιστικό και κουζίνα" loading="lazy" class="w-full h-72 object-cover" />
+          </a>
+          <div class="p-7">
+            <h3 class="font-display text-3xl font-semibold mb-2">Cozy Nights</h3>
+            <p class="text-muted mb-5 leading-relaxed" data-en="A bright, cozy studio with a warm atmosphere — ideal for couples and travellers seeking calm.">
+              Ένα φωτεινό, ζεστό studio με ατμόσφαιρα φιλόξενη — ιδανικό για ζευγάρια και ταξιδιώτες που αναζητούν ηρεμία.
+            </p>
+            <div class="flex items-center gap-4 text-sm text-charcoal/70 mb-6">
+              <span class="flex items-center gap-1.5"><i data-lucide="users" class="w-4 h-4 text-clay"></i> 
+                <span data-en="Up to 4 guests">Έως 4 άτομα</span></span>
+              <span class="flex items-center gap-1.5"><i data-lucide="bed-double" class="w-4 h-4 text-clay"></i> <span data-en="Studio">Studio</span></span>
+              <span class="flex items-center gap-1.5"><i data-lucide="wifi" class="w-4 h-4 text-clay"></i> WiFi</span>
+            </div>
+            <a href="cozy-nights.html" class="btn-outline" data-en="View details">Δείτε λεπτομέρειες <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </article>
+
+        <!-- Card 2 — Serenity Stay -->
+        <article class="lodging-card bg-white rounded-2xl overflow-hidden shadow-sm reveal">
+          <a href="serenity-stay.html" class="block overflow-hidden">
+            <img src="images/sensity/699776238.jpg" alt="Serenity Stay — υπνοδωμάτιο με διπλό κρεβάτι και θέα" loading="lazy" class="w-full h-72 object-cover" />
+          </a>
+          <div class="p-7">
+            <h3 class="font-display text-3xl font-semibold mb-2">Serenity Stay</h3>
+            <p class="text-muted mb-5 leading-relaxed" data-en="A light-filled studio with a marble bathroom and a balcony with a view — relaxing and modern.">
+              Ένα φωτεινό studio με μαρμάρινο μπάνιο και μπαλκόνι με θέα — χαλαρωτικό και μοντέρνο.
+            </p>
+            <div class="flex items-center gap-4 text-sm text-charcoal/70 mb-6">
+              <span class="flex items-center gap-1.5"><i data-lucide="users" class="w-4 h-4 text-clay"></i> 
+                <span data-en="Up to 4 guests">Έως 4 άτομα</span></span>
+              <span class="flex items-center gap-1.5"><i data-lucide="bed-double" class="w-4 h-4 text-clay"></i> <span data-en="Studio">Studio</span></span>
+              <span class="flex items-center gap-1.5"><i data-lucide="wifi" class="w-4 h-4 text-clay"></i> WiFi</span>
+            </div>
+            <a href="serenity-stay.html" class="btn-outline" data-en="View details">Δείτε λεπτομέρειες <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ΓΙΑΤΙ ΕΜΑΣ ===================== -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <p class="uppercase tracking-[0.25em] text-xs text-clay mb-4" data-en="Why choose us">Γιατί εμάς</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-semibold" data-en="A stay you'll remember">Μια διαμονή που θα θυμάστε</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center reveal">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-sand flex items-center justify-center text-terracotta">
+            <i data-lucide="map-pin" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-2xl font-semibold mb-2" data-en="Prime location">Ιδανική τοποθεσία</h3>
+          <p class="text-muted text-sm leading-relaxed" data-en="In Xinos, Messini — close to the sea, tavernas and just minutes from Kalamata.">Στον Ξινό Μεσσήνης — κοντά στη θάλασσα, σε ταβέρνες και λίγα λεπτά από την Καλαμάτα.</p>
+        </div>
+        <div class="text-center reveal">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-sand flex items-center justify-center text-terracotta">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-2xl font-semibold mb-2" data-en="Freshly renovated">Πρόσφατα ανακαινισμένα</h3>
+          <p class="text-muted text-sm leading-relaxed" data-en="Modern, spotless spaces with quality linens and hotel-style towels.">Σύγχρονοι, άψογα καθαροί χώροι με ποιοτικά λευκά είδη και πετσέτες ξενοδοχειακής ποιότητας.</p>
+        </div>
+        <div class="text-center reveal">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-sand flex items-center justify-center text-terracotta">
+            <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-2xl font-semibold mb-2" data-en="Warm hospitality">Ζεστή φιλοξενία</h3>
+          <p class="text-muted text-sm leading-relaxed" data-en="A welcome treat on arrival and local tips to make your stay special.">Ένα μικρό καλωσόρισμα με την άφιξη και τοπικές συμβουλές για ξεχωριστή διαμονή.</p>
+        </div>
+        <div class="text-center reveal">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-sand flex items-center justify-center text-terracotta">
+            <i data-lucide="key-round" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-2xl font-semibold mb-2" data-en="24/7 self check-in">Self check-in 24/7</h3>
+          <p class="text-muted text-sm leading-relaxed" data-en="Arrive any time with your own access code, or book securely on Booking.com.">Φτάστε όποια ώρα θέλετε με δικό σας κωδικό εισόδου ή κλείστε με ασφάλεια στο Booking.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ΤΟΠΟΘΕΣΙΑ / CTA ===================== -->
+  <section class="py-20 px-6 bg-charcoal text-cream">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="uppercase tracking-[0.25em] text-xs text-clay mb-4" data-en="Location">Τοποθεσία</p>
+        <h2 class="font-display text-4xl font-semibold mb-5" data-en="Find us">Πού θα μας βρείτε</h2>
+        <p class="text-cream/80 leading-relaxed mb-6" data-en="Both studios are located on Tasou Alevizou street in Xinos, Messini (24200), a short distance from the beach and around 11 km from Kalamata and its airport.">
+          Και τα δύο studio βρίσκονται στην οδό Τάσου Αλεβίζου, στον Ξινό Μεσσήνης (24200), σε μικρή απόσταση από την παραλία και περίπου 11 χλμ. από την Καλαμάτα και το αεροδρόμιό της.
+        </p>
+        <a href="contact.html" class="btn-primary" data-en="Get in touch">Επικοινωνήστε μαζί μας</a>
+      </div>
+      <div class="reveal rounded-2xl overflow-hidden shadow-lg h-72 md:h-80 map-frame" data-map>
+        <iframe
+          title="Χάρτης τοποθεσίας — Ξινός Μεσσήνης"
+          data-src="https://www.google.com/maps?q=%CE%A4%CE%AC%CF%83%CE%BF%CF%85+%CE%91%CE%BB%CE%B5%CE%B2%CE%AF%CE%B6%CE%BF%CF%85,+%CE%9E%CE%B9%CE%BD%CF%8C%CF%82+%CE%9C%CE%B5%CF%83%CF%83%CE%AE%CE%BD%CE%B7+24200&output=embed"
+          width="100%" height="100%" style="border:0;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-consent">
+          <p data-en="To show the map we load Google Maps, which may set third-party cookies.">Για να εμφανίσουμε τον χάρτη φορτώνουμε το Google Maps, το οποίο ενδέχεται να ορίσει cookies τρίτων.</p>
+          <div class="map-consent-actions">
+            <button type="button" class="cookie-btn cookie-btn-accept" data-map-accept data-en="Show map">Εμφάνιση χάρτη</button>
+            <a href="https://www.google.com/maps?q=%CE%A4%CE%AC%CF%83%CE%BF%CF%85+%CE%91%CE%BB%CE%B5%CE%B2%CE%AF%CE%B6%CE%BF%CF%85,+%CE%9E%CE%B9%CE%BD%CF%8C%CF%82+%CE%9C%CE%B5%CF%83%CF%83%CE%AE%CE%BD%CE%B7+24200" target="_blank" rel="noopener" class="cookie-btn cookie-btn-ghost" data-en="Open in Google Maps">Άνοιγμα στο Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-cream border-t border-sand pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Cozy Nights &amp; Serenity Stay</h3>
+        <p class="text-muted text-sm leading-relaxed max-w-xs" data-en="Two stylish studios for an authentic and relaxing stay in Messini.">
+          Δύο κομψά studio για μια αυθεντική και ξεκούραστη διαμονή στη Μεσσήνη.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-en="Contact">Επικοινωνία</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-clay"></i> <a href="tel:+306945407693" class="hover:text-terracotta">+30 694 540 7693</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-clay"></i> <a href="mailto:vicky.tsakanika@gmail.com" class="hover:text-terracotta">vicky.tsakanika@gmail.com</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-clay"></i> <span data-en="Tasou Alevizou, Xinos Messini 24200">Τάσου Αλεβίζου, Ξινός Μεσσήνη 24200</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-en="Follow us">Ακολουθήστε μας</h4>
+        <div class="flex gap-4">
+          <!-- TODO: αντικαταστήστε το href με τον ακριβή σύνδεσμο της σελίδας σας -->
+          <a href="https://www.instagram.com/serenity.cozy" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/p/Cozy-Nights-Serenity-Stay-61557912811403/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="mailto:vicky.tsakanika@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal max-w-6xl mx-auto mt-12 pt-6 border-t border-sand text-center text-xs text-muted">
+      © <span id="year">2026</span> Cozy Nights &amp; Serenity Stay. <span data-en="All rights reserved.">Με επιφύλαξη παντός δικαιώματος.</span>
+      <span class="block mt-2">
+        <a href="privacy.html" class="hover:text-terracotta underline" data-en="Privacy Policy">Πολιτική Απορρήτου</a>
+        <span class="mx-1">·</span>
+        <button type="button" data-cookie-settings class="hover:text-terracotta underline" data-en="Cookie settings">Ρυθμίσεις cookies</button>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

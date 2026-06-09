@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Serenity Stay — Studio στον Ξινό Μεσσήνης | Cozy Nights &amp; Serenity Stay</title>
+  <meta name="description" content="Serenity Stay: φωτεινό, πρόσφατα ανακαινισμένο studio στον Ξινό Μεσσήνης, με μαρμάρινο μπάνιο και μπαλκόνι με θέα. Δείτε φωτογραφίες και κάντε κράτηση." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Serenity Stay — Studio στον Ξινό Μεσσήνης" />
+  <meta property="og:description" content="Φωτεινό studio με μαρμάρινο μπάνιο και μπαλκόνι με θέα." />
+  <meta property="og:image" content="images/sensity/699775676.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#FAF6F0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Cozy Nights & Serenity Stay" />
+  <link rel="apple-touch-icon" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { cream:"#FAF6F0", sand:"#EFE6DA", clay:"#C17A54", terracotta:"#B5623C", olive:"#6B6B4E", charcoal:"#2B2623", muted:"#8A7E72" },
+        fontFamily: { display:['"Montserrat"',"sans-serif"], body:['"Manrope"',"sans-serif"] }
+      }}
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-charcoal bg-cream has-solid-nav">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 py-4">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-3">
+      <a href="index.html" class="font-display text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide text-charcoal leading-tight">Cozy Nights <span class="text-clay">&amp;</span> Serenity Stay</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-terracotta transition" data-en="Home">Αρχική</a>
+        <a href="cozy-nights.html" class="hover:text-terracotta transition" data-en="Cozy Nights">Cozy Nights</a>
+        <a href="serenity-stay.html" class="text-terracotta" data-en="Serenity Stay">Serenity Stay</a>
+        <a href="contact.html" class="hover:text-terracotta transition" data-en="Contact">Επικοινωνία</a>
+        <button data-lang-toggle class="border border-clay text-clay rounded-full px-3 py-1 text-xs font-semibold hover:bg-clay hover:text-white transition" aria-label="Αλλαγή γλώσσας"><span data-lang-label>EN</span></button>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-charcoal flex-shrink-0" aria-label="Μενού" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" class="w-7 h-7"></i></button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden bg-cream/95 backdrop-blur border-t border-sand mt-4">
+      <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="index.html" class="hover:text-terracotta" data-en="Home">Αρχική</a>
+        <a href="cozy-nights.html" class="hover:text-terracotta" data-en="Cozy Nights">Cozy Nights</a>
+        <a href="serenity-stay.html" class="text-terracotta" data-en="Serenity Stay">Serenity Stay</a>
+        <a href="contact.html" class="hover:text-terracotta" data-en="Contact">Επικοινωνία</a>
+        <button data-lang-toggle class="self-start border border-clay text-clay rounded-full px-3 py-1 text-xs font-semibold" aria-label="Αλλαγή γλώσσας"><span data-lang-label>EN</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28">
+
+    <!-- ===================== PAGE HEADER ===================== -->
+    <section class="px-6 pb-10 text-center">
+      <div class="max-w-3xl mx-auto reveal">
+        <p class="uppercase tracking-[0.25em] text-xs text-clay mb-4" data-en="Accommodation">Κατάλυμα</p>
+        <h1 class="font-display text-5xl sm:text-6xl font-semibold mb-5">Serenity Stay</h1>
+        <p class="text-lg text-muted leading-relaxed" data-en="A light-filled, modern studio with a marble bathroom and a balcony with a view.">
+          Ένα φωτεινό, μοντέρνο studio με μαρμάρινο μπάνιο και μπαλκόνι με θέα.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="px-4 sm:px-6 max-w-6xl mx-auto mb-20">
+      <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 reveal">
+        <div class="gallery-item h-48 sm:h-60 md:col-span-2 md:row-span-2 md:h-full">
+          <img src="images/sensity/699775676.jpg" data-full="images/sensity/699775676.jpg" alt="Serenity Stay — φωτεινός ενιαίος χώρος με καθιστικό και περιοχή ύπνου" loading="lazy" />
+        </div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699776238.jpg" data-full="images/sensity/699776238.jpg" alt="Serenity Stay — διπλό κρεβάτι με θέα από το παράθυρο" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699775919.jpg" data-full="images/sensity/699775919.jpg" alt="Serenity Stay — πλήρως εξοπλισμένη κουζίνα" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699775806.jpg" data-full="images/sensity/699775806.jpg" alt="Serenity Stay — τραπεζαρία με λευκές καρέκλες" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699775815.jpg" data-full="images/sensity/699775815.jpg" alt="Serenity Stay — μαρμάρινο μπάνιο με ντους βροχής" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699775979.jpg" data-full="images/sensity/699775979.jpg" alt="Serenity Stay — μπάνιο με ντουζιέρα και νιπτήρα" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699776030.jpg" data-full="images/sensity/699776030.jpg" alt="Serenity Stay — κρεβάτι με πετσέτες ξενοδοχειακής ποιότητας" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699775820.jpg" data-full="images/sensity/699775820.jpg" alt="Serenity Stay — μπαλκόνι με τραπεζάκι" loading="lazy" /></div>
+        <div class="gallery-item h-48 sm:h-60"><img src="images/sensity/699775873.jpg" data-full="images/sensity/699775873.jpg" alt="Serenity Stay — καλάθι καλωσορίσματος" loading="lazy" /></div>
+      </div>
+      <p class="text-center text-xs text-muted mt-3" data-en="Click a photo to enlarge">Κάντε κλικ σε μια φωτογραφία για μεγέθυνση</p>
+    </section>
+
+    <!-- ===================== ΠΕΡΙΓΡΑΦΗ + AMENITIES ===================== -->
+    <section class="px-6 max-w-6xl mx-auto mb-20 grid lg:grid-cols-3 gap-12">
+      <div class="lg:col-span-2 reveal">
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" data-en="About the space">Ο χώρος</h2>
+        <div class="divider-line w-20 mb-6"></div>
+        <div class="space-y-4 text-muted leading-relaxed">
+          <p data-en="Serenity Stay is a bright, recently renovated studio with a modern aesthetic and a marble-clad bathroom. The open-plan space features a double bed, a living corner, a dining area and a kitchen with everything you need, while the balcony with a view is perfect for relaxing.">
+            Το Serenity Stay είναι ένα φωτεινό, πρόσφατα ανακαινισμένο studio με μοντέρνα αισθητική και μπάνιο επενδυμένο με μάρμαρο. Ο ανοιχτός χώρος φιλοξενεί διπλό κρεβάτι, καθιστικό, τραπεζαρία και κουζίνα με όλες τις ανέσεις, ενώ το μπαλκόνι με θέα είναι ιδανικό για χαλάρωση.
+          </p>
+          <p data-en="Guests especially love the views and the calm of the space. Set in a quiet part of Xinos in Messini, it offers easy access to the sea and Kalamata. You'll find air conditioning, fast WiFi, a smart TV, hotel-quality linens and towels, and a welcome treat on arrival. Entry is easy with your own access code (self check-in), any time of day.">
+            Οι επισκέπτες ξεχωρίζουν τη θέα και την ηρεμία του χώρου. Βρίσκεται σε ήσυχο σημείο του Ξινού στη Μεσσήνη, με εύκολη πρόσβαση στη θάλασσα και την Καλαμάτα. Θα βρείτε κλιματισμό, γρήγορο WiFi, smart TV, λευκά είδη και πετσέτες ξενοδοχειακής ποιότητας και ένα καλωσόρισμα με την άφιξή σας. Η είσοδος γίνεται εύκολα με δικό σας κωδικό (self check-in), οποιαδήποτε ώρα.
+          </p>
+        </div>
+
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold mt-12 mb-6" data-en="Amenities">Παροχές</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="wifi" class="w-5 h-5"></i></span> <span data-en="Free WiFi">Δωρεάν WiFi</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="snowflake" class="w-5 h-5"></i></span> <span data-en="Air conditioning">Κλιματισμός (A/C)</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="utensils" class="w-5 h-5"></i></span> <span data-en="Equipped kitchen">Εξοπλισμένη κουζίνα</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="microwave" class="w-5 h-5"></i></span> <span data-en="Oven & hotplates">Φουρνάκι &amp; εστίες</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="coffee" class="w-5 h-5"></i></span> <span data-en="Kettle & coffee">Βραστήρας &amp; καφές</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="tv" class="w-5 h-5"></i></span> <span data-en="Smart TV">Smart TV</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="shower-head" class="w-5 h-5"></i></span> <span data-en="Marble bathroom, rainfall shower">Μαρμάρινο μπάνιο, ντους βροχής</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="wind" class="w-5 h-5"></i></span> <span data-en="Hair dryer">Σεσουάρ μαλλιών</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="mountain" class="w-5 h-5"></i></span> <span data-en="Balcony with a view">Μπαλκόνι με θέα</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="key-round" class="w-5 h-5"></i></span> <span data-en="Self check-in 24/7">Self check-in 24/7</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="square-parking" class="w-5 h-5"></i></span> <span data-en="Parking nearby">Πάρκινγκ κοντά</span></div>
+          <div class="amenity"><span class="icon-wrap"><i data-lucide="gift" class="w-5 h-5"></i></span> <span data-en="Welcome treats">Welcome treats</span></div>
+        </div>
+      </div>
+
+      <!-- Sticky booking card -->
+      <aside class="reveal">
+        <div class="bg-white border border-sand rounded-2xl p-7 shadow-sm lg:sticky lg:top-28">
+          <div class="flex items-center gap-2 text-sm text-charcoal/70 mb-4">
+            <i data-lucide="users" class="w-4 h-4 text-clay"></i> <span data-en="Up to 4 guests">Έως 4 άτομα</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-charcoal/70 mb-4">
+            <i data-lucide="bed-double" class="w-4 h-4 text-clay"></i> <span data-en="Studio (open-plan)">Studio (ενιαίος χώρος)</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm text-charcoal/70 mb-6">
+            <i data-lucide="bath" class="w-4 h-4 text-clay"></i> <span data-en="1 bathroom">1 μπάνιο</span>
+          </div>
+          <div class="divider-line mb-6"></div>
+          <p class="text-sm text-muted mb-5" data-en="Book securely and instantly through Booking.com.">
+            Κλείστε με ασφάλεια και άμεσα μέσω Booking.com.
+          </p>
+          <a href="https://www.booking.com/hotel/gr/serenity-stay.el.html" target="_blank" rel="noopener" class="btn-primary w-full justify-center text-base">
+            <i data-lucide="calendar-check" class="w-5 h-5"></i> <span data-en="Book on Booking.com">Κράτηση στο Booking.com</span>
+          </a>
+          <a href="contact.html" class="btn-outline w-full justify-center mt-3" data-en="Or contact us">Ή επικοινωνήστε μαζί μας</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ===================== MAP ===================== -->
+    <section class="px-6 max-w-6xl mx-auto mb-24">
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-6 reveal" data-en="Location">Τοποθεσία</h2>
+      <div class="reveal rounded-2xl overflow-hidden shadow-lg h-80 map-frame" data-map>
+        <iframe title="Χάρτης Serenity Stay — Ξινός Μεσσήνης" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.9729847626327!2d22.00314272627876!3d37.05812695311721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1361af1401396cfb%3A0x179e29f22efbf555!2sSerenity%20Stay!5e0!3m2!1sel!2sgr!4v1781005263496!5m2!1sel!2sgr" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-consent">
+          <p data-en="To show the map we load Google Maps, which may set third-party cookies.">Για να εμφανίσουμε τον χάρτη φορτώνουμε το Google Maps, το οποίο ενδέχεται να ορίσει cookies τρίτων.</p>
+          <div class="map-consent-actions">
+            <button type="button" class="cookie-btn cookie-btn-accept" data-map-accept data-en="Show map">Εμφάνιση χάρτη</button>
+            <a href="https://maps.app.goo.gl/n9vELj2b7MgTtv7r7" target="_blank" rel="noopener" class="cookie-btn cookie-btn-ghost" data-en="Open in Google Maps">Άνοιγμα στο Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-cream border-t border-sand pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Cozy Nights &amp; Serenity Stay</h3>
+        <p class="text-muted text-sm leading-relaxed max-w-xs" data-en="Two stylish studios for an authentic and relaxing stay in Messini.">Δύο κομψά studio για μια αυθεντική και ξεκούραστη διαμονή στη Μεσσήνη.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-en="Contact">Επικοινωνία</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-clay"></i> <a href="tel:+306945407693" class="hover:text-terracotta">+30 694 540 7693</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-clay"></i> <a href="mailto:vicky.tsakanika@gmail.com" class="hover:text-terracotta">vicky.tsakanika@gmail.com</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-clay"></i> <span data-en="Tasou Alevizou, Xinos Messini 24200">Τάσου Αλεβίζου, Ξινός Μεσσήνη 24200</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-en="Follow us">Ακολουθήστε μας</h4>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/serenity.cozy" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/p/Cozy-Nights-Serenity-Stay-61557912811403/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="mailto:vicky.tsakanika@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-terracotta hover:bg-clay hover:text-white transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal max-w-6xl mx-auto mt-12 pt-6 border-t border-sand text-center text-xs text-muted">
+      © <span id="year">2026</span> Cozy Nights &amp; Serenity Stay. <span data-en="All rights reserved.">Με επιφύλαξη παντός δικαιώματος.</span>
+      <span class="block mt-2">
+        <a href="privacy.html" class="hover:text-terracotta underline" data-en="Privacy Policy">Πολιτική Απορρήτου</a>
+        <span class="mx-1">·</span>
+        <button type="button" data-cookie-settings class="hover:text-terracotta underline" data-en="Cookie settings">Ρυθμίσεις cookies</button>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Προβολή φωτογραφίας">
+    <button id="lb-close" class="lb-btn" aria-label="Κλείσιμο"><i data-lucide="x" class="w-6 h-6"></i></button>
+    <button id="lb-prev" class="lb-btn" aria-label="Προηγούμενη"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+    <img id="lb-img" src="" alt="" />
+    <button id="lb-next" class="lb-btn" aria-label="Επόμενη"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+    <span id="lb-counter" class="lb-counter">1 / 9</span>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
