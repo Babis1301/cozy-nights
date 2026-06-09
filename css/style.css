@@ -1,0 +1,481 @@
+/* ==========================================================================
+   [ΟΝΟΜΑ_ΕΤΑΙΡΕΙΑΣ] — Custom styles
+   Tailwind (CDN) χειρίζεται το layout. Εδώ μπαίνουν μόνο όσα δεν καλύπτει:
+   fonts, animations, lightbox, navbar transitions.
+   ========================================================================== */
+
+:root {
+  --cream: #FAF6F0;
+  --sand: #EFE6DA;
+  --clay: #C17A54;
+  --terracotta: #B5623C;
+  --olive: #6B6B4E;
+  --charcoal: #2B2623;
+  --muted: #8A7E72;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* --- Selection & focus accessibility ----------------------------------- */
+::selection {
+  background: var(--clay);
+  color: #fff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --- Sticky navbar: starts transparent, turns solid on scroll ----------- */
+#navbar {
+  transition: background-color .35s ease, box-shadow .35s ease, padding .35s ease;
+}
+
+#navbar.nav-solid {
+  background-color: rgba(250, 246, 240, .92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px -12px rgba(43, 38, 35, .35);
+}
+
+/* Σε εσωτερικές σελίδες (όχι hero) το navbar είναι solid εξ αρχής */
+body.has-solid-nav #navbar {
+  background-color: rgba(250, 246, 240, .92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 16px -10px rgba(43, 38, 35, .3);
+}
+
+/* --- Fade-in on scroll -------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .8s cubic-bezier(.22,.61,.36,1),
+              transform .8s cubic-bezier(.22,.61,.36,1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Σεβασμός χρηστών που προτιμούν λιγότερη κίνηση */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+}
+
+/* --- Hero ---------------------------------------------------------------- */
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(43, 38, 35, .55) 0%,
+    rgba(43, 38, 35, .25) 40%,
+    rgba(43, 38, 35, .55) 100%
+  );
+}
+
+/* --- Gallery grid & images --------------------------------------------- */
+.gallery-item {
+  overflow: hidden;
+  border-radius: .75rem;
+  cursor: zoom-in;
+}
+
+.gallery-item img {
+  transition: transform .6s cubic-bezier(.22,.61,.36,1), filter .4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+  filter: brightness(1.03);
+}
+
+/* Κάτω από 408px: φωτογραφίες σε μία στήλη ώστε να μη φαίνονται μικρές */
+@media (max-width: 408px) {
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Lightbox ----------------------------------------------------------- */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(28, 24, 22, .94);
+  padding: 1.25rem;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+#lightbox.open {
+  display: flex;
+  opacity: 1;
+}
+
+#lightbox img {
+  max-width: min(92vw, 1100px);
+  max-height: 84vh;
+  border-radius: .5rem;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, .8);
+  object-fit: contain;
+}
+
+.lb-btn {
+  position: absolute;
+  background: rgba(250, 246, 240, .12);
+  border: 1px solid rgba(250, 246, 240, .25);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .25s ease, transform .25s ease;
+}
+
+.lb-btn:hover { background: rgba(250, 246, 240, .28); transform: scale(1.06); }
+
+#lb-close { top: 1.25rem; right: 1.25rem; }
+#lb-prev  { left: 1.25rem;  top: 50%; transform: translateY(-50%); }
+#lb-next  { right: 1.25rem; top: 50%; transform: translateY(-50%); }
+#lb-prev:hover, #lb-next:hover { transform: translateY(-50%) scale(1.06); }
+
+.lb-counter {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(250, 246, 240, .85);
+  font-size: .9rem;
+  letter-spacing: .05em;
+}
+
+/* --- Buttons ------------------------------------------------------------ */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: .55rem;
+  background: var(--clay);
+  color: #fff;
+  padding: .85rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  transition: background .3s ease, transform .3s ease, box-shadow .3s ease;
+  box-shadow: 0 10px 24px -12px rgba(181, 98, 60, .7);
+}
+
+.btn-primary:hover {
+  background: var(--terracotta);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -12px rgba(181, 98, 60, .8);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: .55rem;
+  border: 1.5px solid var(--clay);
+  color: var(--clay);
+  padding: .8rem 1.7rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background .3s ease, color .3s ease, transform .3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--clay);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* --- Cards -------------------------------------------------------------- */
+.lodging-card {
+  transition: transform .45s cubic-bezier(.22,.61,.36,1), box-shadow .45s ease;
+}
+
+.lodging-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 50px -28px rgba(43, 38, 35, .45);
+}
+
+.lodging-card img {
+  transition: transform .7s cubic-bezier(.22,.61,.36,1);
+}
+
+.lodging-card:hover img {
+  transform: scale(1.07);
+}
+
+/* --- Decorative divider ------------------------------------------------- */
+.divider-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--clay), transparent);
+}
+
+/* --- Form feedback ------------------------------------------------------ */
+.form-msg {
+  display: none;
+  border-radius: .6rem;
+  padding: .9rem 1.1rem;
+  font-size: .95rem;
+}
+
+.form-msg.show { display: block; }
+.form-msg.success { background: #e7f0e4; color: #2f5d2a; border: 1px solid #b9d4b0; }
+.form-msg.error   { background: #f7e3dd; color: #8c3a23; border: 1px solid #e3b9ab; }
+
+/* --- Navbar responsive fixes ------------------------------------------ */
+#navbar nav {
+  min-width: 0;
+  align-items: flex-start;
+}
+
+#navbar nav > a {
+  white-space: normal;
+  flex-shrink: 1;
+  min-width: 0;
+  max-width: calc(100% - 4rem);
+  word-break: break-word;
+}
+
+#navbar nav > div {
+  white-space: nowrap;
+}
+
+#navbar nav > div a {
+  white-space: nowrap;
+}
+
+#navbar nav > div a[href="serenity-stay.html"] {
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+@media (max-width: 1024px) {
+  #navbar nav > a {
+    font-size: 1.35rem;
+  }
+
+  #navbar nav > div {
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #navbar nav > a {
+    font-size: 1.2rem;
+  }
+
+  #navbar nav > div {
+    gap: 0.75rem;
+  }
+
+  #navbar nav > div a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 408px) {
+  #navbar nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #navbar nav > a,
+  #navbar nav > div,
+  #navbar nav > div a {
+    white-space: normal;
+  }
+}
+
+.field-error {
+  color: var(--terracotta);
+  font-size: .82rem;
+  margin-top: .25rem;
+  display: none;
+}
+
+.field-error.show { display: block; }
+
+input.invalid, select.invalid, textarea.invalid {
+  border-color: var(--terracotta) !important;
+}
+
+/* --- Mobile menu -------------------------------------------------------- */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease;
+}
+
+#mobile-menu.open {
+  max-height: 420px;
+}
+
+/* --- Utility: ξεχωριστό amenity icon ----------------------------------- */
+.amenity {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--sand);
+  border-radius: .75rem;
+  transition: border-color .3s ease, transform .3s ease;
+}
+
+.amenity:hover {
+  border-color: var(--clay);
+  transform: translateY(-2px);
+}
+
+.amenity .icon-wrap {
+  background: var(--sand);
+  color: var(--terracotta);
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* --- Cookie consent banner --------------------------------------------- */
+#cookie-banner {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 90;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--sand);
+  border-radius: 1rem;
+  box-shadow: 0 24px 60px -22px rgba(43, 38, 35, .55);
+  padding: 1.3rem 1.5rem;
+  display: none;
+}
+
+#cookie-banner.show { display: block; }
+
+#cookie-banner h2 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: .45rem;
+}
+
+#cookie-banner p {
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: 1.1rem;
+}
+
+.cookie-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 9999px;
+  padding: .6rem 1.3rem;
+  font-weight: 600;
+  font-size: .9rem;
+  cursor: pointer;
+  border: 1.5px solid var(--clay);
+  transition: background .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.cookie-btn-accept { background: var(--clay); color: #fff; }
+.cookie-btn-accept:hover { background: var(--terracotta); border-color: var(--terracotta); }
+.cookie-btn-reject { background: transparent; color: var(--clay); }
+.cookie-btn-reject:hover { background: var(--clay); color: #fff; }
+.cookie-btn-ghost { background: transparent; color: var(--charcoal); border-color: var(--sand); }
+.cookie-btn-ghost:hover { border-color: var(--clay); color: var(--clay); }
+
+@media (max-width: 480px) {
+  .cookie-actions { flex-direction: column; }
+  .cookie-btn { width: 100%; }
+}
+
+/* --- Map consent gating (φορτώνει μόνο μετά από συγκατάθεση) ------------ */
+.map-frame { position: relative; }
+.map-frame iframe { width: 100%; height: 100%; display: block; border: 0; }
+
+.map-consent {
+  position: absolute;
+  inset: 0;
+  background: var(--sand);
+  color: var(--charcoal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: .9rem;
+  padding: 1.5rem;
+}
+
+.map-consent p { font-size: .9rem; max-width: 38ch; line-height: 1.5; }
+
+.map-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  justify-content: center;
+}
+
+.map-frame.consented .map-consent { display: none; }
+
+/* Σύνδεσμοι/κουμπί στο κάτω μέρος του footer */
+.footer-legal button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
