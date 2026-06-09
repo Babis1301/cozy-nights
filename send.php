@@ -9,7 +9,7 @@
 header('Content-Type: application/json; charset=utf-8');
 
 /* --- Ρυθμίσεις (αλλάξτε εδώ αν χρειαστεί) ------------------------------- */
-$RECIPIENT = 'vicky.tsakanika@gmail.com';     // πού φτάνουν τα μηνύματα
+$RECIPIENT = 'bbarbatos1301@gmail.com';     // πού φτάνουν τα μηνύματα
 $SITE_NAME = 'Cozy Nights & Serenity Stay';
 
 /* --- Μόνο POST --------------------------------------------------------- */
